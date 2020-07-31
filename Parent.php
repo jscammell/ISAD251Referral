@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Appointment Manager</title>
+        <title>Parent</title>
         
         <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,12 +15,14 @@ and open the template in the editor.
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+html,body,h1,h2,h3,h4,h5,h6,h7 {font-family: "Raleway", sans-serif}
 </style>
-        
     </head>
+    
+    
+    
     <body>
-        <!-- Top container -->
+       <!-- Top container -->
 <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
   <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
   <span class="w3-bar-item w3-right">Logo</span>
@@ -33,7 +35,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       
     </div>
     <div class="w3-col s8 w3-bar">
-      <span>Welcome <strong></strong></span><br>
+      <span>Welcome, <strong>Parent</strong></span><br>
       <a href="#" class="w3-bar-item w3-button"><i class=""></i></a>
       <a href="#" class="w3-bar-item w3-button"><i class=""></i></a>
       <a href="#" class="w3-bar-item w3-button"><i class=""></i></a>
@@ -62,35 +64,78 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- Header -->
   <header class="w3-container" style="padding-top:22px">
     <h5><b><i class="fa fa-dashboard"></i> Appointment Tracker and Manager</b></h5>
-    <h6>Please select a user Type</h6>
+    <h6>Parent</h6>
+    <h7>Please Select An Action</h7>
   </header>
+  
 
   <div class="w3-row-padding w3-margin-bottom">
     <div class="w3-quarter">
       <div class="w3-container w3-blue w3-padding-16">
-        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          
+        <div class="w3-left"><i class=""></i></div>
+        <div class="w3-right">          
         </div>
         <div class="w3-clear"></div>
-        <h4>Parent</h4>
+        <h4>Create a deadline for family member</h4>
+      </div>
+    </div>
+  
+      <div class="w3-quarter">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class=""></i></div>
+        <div class="w3-right">          
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Add Details Of Appointment</h4>
+      </div>
+    </div>  
+</div>
+  
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class=""></i></div>
+        <div class="w3-right">          
+        </div>
+        <div class="w3-clear"></div>
+        <h4>View upcoming appointments</h4>
+      </div>
+    </div>  
+      
+    <div class="w3-quarter">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class=""></i></div>
+        <div class="w3-right">          
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Add Notes To Previous Appointments</h4>
+      </div>
+    </div>  
+</div>  
+
+  
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class=""></i></div>
+        <div class="w3-right">          
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Chnage Details Of Any Family Appointment</h4>
       </div>
     </div>
       
-    <div class="w3-quarter">
-      <div class="w3-container w3-red w3-padding-16">
-        <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          
+      <div class="w3-quarter">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class=""></i></div>
+        <div class="w3-right">          
         </div>
         <div class="w3-clear"></div>
-        <h4>Child</h4>
+        <h4>Cancel Appointment</h4>
       </div>
     </div>   
-</div>
+  </div>
   
-
- 
       
 
   <!-- Footer -->
@@ -127,13 +172,10 @@ function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
 }
-</script>
+</script>  
         
         <?php
         // put your code here
-        
-        
-        
         ?>
     </body>
 </html>
