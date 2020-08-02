@@ -5,9 +5,11 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
+    
     <head>
+        
         <meta charset="UTF-8">
-        <title>Child</title>
+        <title>Create Deadline For Family</title>
         
         <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,8 +17,9 @@ and open the template in the editor.
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html,body,h1,h2,h3,h4,h5,h6,h7 {font-family: "Raleway", sans-serif}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
+
     </head>
     
     
@@ -35,7 +38,7 @@ html,body,h1,h2,h3,h4,h5,h6,h7 {font-family: "Raleway", sans-serif}
       
     </div>
     <div class="w3-col s8 w3-bar">
-      <span>Welcome, <strong>Child</strong></span><br>
+      <span>Welcome <strong></strong></span><br>
       <a href="#" class="w3-bar-item w3-button"><i class=""></i></a>
       <a href="#" class="w3-bar-item w3-button"><i class=""></i></a>
       <a href="#" class="w3-bar-item w3-button"><i class=""></i></a>
@@ -47,9 +50,9 @@ html,body,h1,h2,h3,h4,h5,h6,h7 {font-family: "Raleway", sans-serif}
   </div>
   <div class="w3-bar-block">
     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>    
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Parent</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Child</a>
+    <a href="../Home/index.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Home</a>
+    <a href="../Parent/Parent.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Parent</a>
+    <a href="../Child/Child.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Child</a>
     
   </div>
 </nav>
@@ -63,72 +66,41 @@ html,body,h1,h2,h3,h4,h5,h6,h7 {font-family: "Raleway", sans-serif}
 
   <!-- Header -->
   <header class="w3-container" style="padding-top:22px">
-    <h5><b><i class="fa fa-dashboard"></i> Appointment Tracker and Manager</b></h5>
-    <h6>Child</h6>
-    <h7>Please Select An Action</h7>
+    <h5><b><i class="fa fa-dashboard"></i> Appointment Tracker and Manager</b></h5>    
   </header>
   
+  
 
   <div class="w3-row-padding w3-margin-bottom">
-    <div class="w3-quarter">
-      <div class="w3-container w3-red w3-padding-16">
-        <div class="w3-left"><i class=""></i></div>
-        <div class="w3-right">          
-        </div>
-        <div class="w3-clear"></div>
-        <h4>Add Details Of Deadlines To Be Met</h4>
-      </div>
-    </div>
-  
-      <div class="w3-quarter">
-      <div class="w3-container w3-red w3-padding-16">
-        <div class="w3-left"><i class=""></i></div>
-        <div class="w3-right">          
-        </div>
-        <div class="w3-clear"></div>
-        <h4>Move Deadline</h4>
-      </div>
-    </div>  
+    
+    <h1 style="color: black;"> create Family Deadline</h1>
+
+            <form method="post" action="ProcessAccountAdmin.php" id="CreateFamilyDeadline" >
+            <br>
+            <label for="Appointment_Name">Appointment Name</label>
+            <input type="text" id="form-AppointmentName" placeholder="Appointment Name..."  name="formAppointmentName" >
+            <br> 
+            <label for="email">Notes</label>
+            <input type="text" id="form-Notes" placeholder="Notes..."  name="form-Notes" >
+             <br> 
+            <label for="Details">Details</label>
+            <input type="text" id="form-Details" placeholder="Details..."  name="form-Details" >
+            <br>
+            <label for="ChildName">Child_Name</label>
+            <input <input type="ChildName" pp-enable id="form-ChildName" placeholder="ChildName..." name="form-ChildName" > 
+            <br>
+            <label for="Date">Date</label>
+            <input type="text" id="form-Date" placeholder="Date..."  name="formDate" >
+            <br>
+
+            <input type="submit" value="Submit" class="btn btn-info">  
+      
 </div>
   
-  <div class="w3-row-padding w3-margin-bottom">
-    <div class="w3-quarter">
-      <div class="w3-container w3-red w3-padding-16">
-        <div class="w3-left"><i class=""></i></div>
-        <div class="w3-right">          
-        </div>
-        <div class="w3-clear"></div>
-        <h4>View Upcoming Deadlines</h4>
-      </div>
-    </div>  
+
+ 
       
-    <div class="w3-quarter">
-      <div class="w3-container w3-red w3-padding-16">
-        <div class="w3-left"><i class=""></i></div>
-        <div class="w3-right">          
-        </div>
-        <div class="w3-clear"></div>
-        <h4>Delete Deadline</h4>
-      </div>
-    </div>  
-</div>  
 
-  
-  <div class="w3-row-padding w3-margin-bottom">
-    <div class="w3-quarter">
-      <div class="w3-container w3-red w3-padding-16">
-        <div class="w3-left"><i class=""></i></div>
-        <div class="w3-right">          
-        </div>
-        <div class="w3-clear"></div>
-        <h4>Show Deadline Has Been Met</h4>
-      </div>
-    </div>
-  </div>
-
-  
-  
-  
   <!-- Footer -->
   <footer class="w3-container w3-padding-16 w3-light-grey">
     <h4>FOOTER</h4>
@@ -163,7 +135,9 @@ function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
 }
-</script> 
+</script>
+        
+        
         
         <?php
         // put your code here
