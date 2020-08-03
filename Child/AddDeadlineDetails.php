@@ -75,11 +75,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     
     <h1 style="color: black;"> Add Details Of Deadlines To Be Met</h1>
 
-            <form method="post" action="ProcessAccountAdmin.php" id="CreateFamilyDeadline" >
+            <form method="post" action="../ServerSideCode/AddDeadlineDetails.php" id="CreateFamilyDeadline" >
             <br>
             <label for="Appointment_Name">Appointment Name</label>
             <br>
-            <input type="text" id="form-AppointmentName" placeholder="Appointment Name..."  name="formAppointmentName" >
+            <input type="text" id="form-AppointmentName" placeholder="Appointment Name..."  name="form-AppointmentName" >
             <br>
             <br>
             <label for="Notes">Notes</label>
@@ -97,14 +97,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
             <input <input type="ChildName" pp-enable id="form-ChildName" placeholder="ChildName..." name="form-ChildName" > 
             <br>
             <br>
-            <label for="Date">Date</label>
+            <label for="Date">Date (YYYY-MM-DD 00:00:00)</label>
             <br>
-            <input type="text" id="form-Date" placeholder="Date..."  name="formDate" >
+            <input type="text" id="form-Date" placeholder="YYYY-MM-DD 00:00:00"  name="form-Date" >
             <br>
             <br>
 
             <input type="submit" value="Submit" class="btn btn-info">   
       
+            </form>
 </div>
   
 

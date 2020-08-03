@@ -75,16 +75,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     
     <h1 style="color: black;"> Delete Deadline</h1>
 
-            <form method="post" action="ProcessAccountAdmin.php" id="CreateFamilyDeadline" >
+    <form method="post" action="../ServerSideCode/DeleteDeadline.php" id="CreateFamilyDeadline" >
             <br>
             <label for="Appointment_Name">Appointment Name</label>
             <br> 
-            <input type="text" id="form-AppointmentName" placeholder="Appointment Name..."  name="formAppointmentName" >
+            <input type="text" id="form-AppointmentName" placeholder="Appointment Name..."  name="form-AppointmentName" >
             <br>             
             <br>
 
             <input type="submit" value="Submit" class="btn btn-info">  
       
+            </form>
 </div>
   
 

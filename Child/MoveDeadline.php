@@ -90,7 +90,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
             
 
             <input type="submit" value="Submit" class="btn btn-info">  
-      
+      </form>
 </div>
   
 

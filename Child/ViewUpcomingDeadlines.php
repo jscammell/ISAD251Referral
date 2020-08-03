@@ -75,6 +75,77 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     
     <h1 style="color: black;"> View Upcoming Deadlines</h1>
 
+    <form method="post" action="ViewUpcomingDeadlines.php" id="CreateFamilyDeadline" >
+            <br>
+            <label for="Child_Name">Your Name</label>
+            <br> 
+            <input type="text" id="form-ChildName" placeholder="Your Name..."  name="form-ChildName" >
+            <br>             
+            <br>
+
+            <input type="submit" value="Submit" class="btn btn-info">
+            
+            </form>
+        
+        <?php
+    echo "<tr>";
+            echo "<td>Appointment</td>";
+            echo "---";
+            echo "<td>Appointment Name</td>";
+            echo "----";
+            echo "<td>Notes</td>";
+            echo "--------------";
+            echo "<td>Details</td>";
+            echo "--------------";
+            echo "<td>Child Name</td>";
+            echo "---";
+            echo "<td>date</td>";
+            echo "</br>";
+            echo "</br>";
+
+        include_once '../Database/Database.php';
+        
+        $conn = getConnection();
+        //$ChildName = $_POST['form-ChildName'];
+        if (!empty($_POST['form-ChildName'])){
+        $ChildName = $_POST['form-ChildName'];
+        
+        $getAppointment = "SELECT appointmentId, appointment_Name, notes, details, child_Name, date FROM appointment WHERE date >= CURDATE() AND child_Name = '$ChildName'";
+        $resultsAppointment =  mysqli_query($conn, $getAppointment);
+      
+        
+                while($rowAppointment = mysqli_fetch_array($resultsAppointment)){
+
+            if ($resultsAppointment->num_rows > 0) {                        
+                        
+                            $appointmentId = $rowAppointment['appointmentId'];
+                            $appointment_Name = $rowAppointment['appointment_Name'];
+                            $notes = $rowAppointment['notes'];
+                            $details = $rowAppointment['details'];
+                            $child_Name = $rowAppointment['child_Name'];
+                            $date = $rowAppointment['date'];
+                            
+                            echo "<tr>";
+                            echo "<td>".$appointmentId."</td>";
+                            echo "------------------";
+                            echo "<td>".$appointment_Name."</td>";
+                            echo "---";
+                            echo "<td>".$notes."</td>";
+                            echo "---";                            
+                            echo "<td>".$details."</td>";
+                            echo "---";
+                            echo "<td>".$child_Name."</td>";
+                            echo "-------";
+                            echo "<td>".$date."</td>";                            
+                            echo "</br>";
+            }
+                }
+        }
+        
+                        
+
+            
+      ?>
             
       
 </div>

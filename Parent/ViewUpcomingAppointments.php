@@ -74,11 +74,62 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <div class="w3-row-padding w3-margin-bottom">
     
     <h1 style="color: black;"> View Upcoming Appointments</h1>
+    <?php
+    echo "<tr>";
+            echo "<td>Appointment</td>";
+            echo "---";
+            echo "<td>Appointment Name</td>";
+            echo "----";
+            echo "<td>Notes</td>";
+            echo "--------------";
+            echo "<td>Details</td>";
+            echo "--------------";
+            echo "<td>Child Name</td>";
+            echo "---";
+            echo "<td>date</td>";
+            echo "</br>";
+            echo "</br>";
 
-            
+        include_once '../Database/Database.php';
 
-            
+        $conn = getConnection();
+
+        
+        $getAppointment = "SELECT appointmentId, appointment_Name, notes, details, child_Name, date FROM appointment WHERE date >= CURDATE()";
+        $resultsAppointment =  mysqli_query($conn, $getAppointment);
       
+        
+                while($rowAppointment = mysqli_fetch_array($resultsAppointment)){
+
+            if ($resultsAppointment->num_rows > 0) {                        
+                        
+                            $appointmentId = $rowAppointment['appointmentId'];
+                            $appointment_Name = $rowAppointment['appointment_Name'];
+                            $notes = $rowAppointment['notes'];
+                            $details = $rowAppointment['details'];
+                            $child_Name = $rowAppointment['child_Name'];
+                            $date = $rowAppointment['date'];
+                            
+                            echo "<tr>";
+                            echo "<td>".$appointmentId."</td>";
+                            echo "------------------";
+                            echo "<td>".$appointment_Name."</td>";
+                            echo "---";
+                            echo "<td>".$notes."</td>";
+                            echo "---";                            
+                            echo "<td>".$details."</td>";
+                            echo "---";
+                            echo "<td>".$child_Name."</td>";
+                            echo "-------";
+                            echo "<td>".$date."</td>";                            
+                            echo "</br>";
+            }
+                }
+                
+                        
+
+            
+      ?>
 </div>
   
 
