@@ -83,17 +83,17 @@ html,body,h1,h2,h3,h4,h5,h6,h7 {font-family: "Raleway", sans-serif}
     </div>
   
       <div class="w3-quarter">
-          <a href="AddDetailsOfAppointment.php">
-      <div class="w3-container w3-blue w3-padding-16">          
+          <a href="CancelAppointment.php">
+      <div class="w3-container w3-blue w3-padding-16">
         <div class="w3-left"><i class=""></i></div>
         <div class="w3-right">          
         </div>
         <div class="w3-clear"></div>
-        <h4>Add Details Of Appointment</h4>
+        <h4>Cancel Appointment</h4>
       </div>
-      </a>
-
-    </div>             
+              </a>
+    </div> 
+               
 </div>
   
   <div class="w3-row-padding w3-margin-bottom">
@@ -136,19 +136,8 @@ html,body,h1,h2,h3,h4,h5,h6,h7 {font-family: "Raleway", sans-serif}
         <h4>Change Details Of Any Family Appointment</h4>
       </div>
             </a>
-    </div>
-      
-      <div class="w3-quarter">
-          <a href="CancelAppointment.php">
-      <div class="w3-container w3-blue w3-padding-16">
-        <div class="w3-left"><i class=""></i></div>
-        <div class="w3-right">          
-        </div>
-        <div class="w3-clear"></div>
-        <h4>Cancel Appointment</h4>
-      </div>
-              </a>
-    </div>   
+    </div>      
+        
   </div>
   
       

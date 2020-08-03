@@ -73,25 +73,21 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   <div class="w3-row-padding w3-margin-bottom">
     
-    <h1 style="color: black;"> create Family Deadline</h1>
+    <h1 style="color: black;"> Move Deadline</h1>
 
             <form method="post" action="ProcessAccountAdmin.php" id="CreateFamilyDeadline" >
             <br>
-            <label for="Appointment_Name">Appointment Name</label>
-            <input type="text" id="form-AppointmentName" placeholder="Appointment Name..."  name="formAppointmentName" >
-            <br> 
-            <label for="email">Notes</label>
-            <input type="text" id="form-Notes" placeholder="Notes..."  name="form-Notes" >
-             <br> 
-            <label for="Details">Details</label>
-            <input type="text" id="form-Details" placeholder="Details..."  name="form-Details" >
+            <label for="Appointment_Name">Appointment Name To Be Updated</label>
             <br>
-            <label for="ChildName">Child_Name</label>
-            <input <input type="ChildName" pp-enable id="form-ChildName" placeholder="ChildName..." name="form-ChildName" > 
+            <input type="text" id="form-AppointmentName" placeholder="Appointment Name..."  name="formAppointmentName" >
+            <br>
             <br>
             <label for="Date">Date</label>
-            <input type="text" id="form-Date" placeholder="Date..."  name="formDate" >
             <br>
+            <input type="text" id="form-Date" placeholder="Date..."  name="form-Date" >
+            <br>
+            <br>
+            
 
             <input type="submit" value="Submit" class="btn btn-info">  
       
