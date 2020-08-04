@@ -74,11 +74,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <div class="w3-row-padding w3-margin-bottom">
     
     <h1 style="color: black;"> Show Deadline Has Been Met</h1>
-<label for="Appointment_Name">Appointment Name</label>
-            <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
+    <label for="Appointment_Name">Appointment Name</label>
+    <div class="search-container">
+    <form method="post" action="../ServerSideCode/ShowDeadlineHasBeenMet.php">
+        <br>
+        <label for="Appointment_Name">Appointment Name</label>
+        <br> 
+        <input type="text" id="form-AppointmentName" placeholder="Appointment Name..."  name="form-AppointmentName" >
+        <br>             
+        <br>
+
+        <input type="submit" value="Submit" class="btn btn-info">
     </form>
   </div> 
       

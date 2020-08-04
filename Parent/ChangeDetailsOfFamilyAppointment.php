@@ -75,11 +75,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     
     <h1 style="color: black;"> Change Details Of Family Appointments</h1>
 
-            <form method="post" action="ProcessAccountAdmin.php" id="CreateFamilyDeadline" >
+    <form method="post" action="../ServerSideCode/ChangeDetails.php" id="CreateFamilyDeadline" >
             <br>
             <label for="Appointment_Name">Appointment Name To Be Updated</label>
             <br>
-            <input type="text" id="form-AppointmentName" placeholder="Appointment Name..."  name="formAppointmentName" >
+            <input type="text" id="form-AppointmentName" placeholder="Appointment Name..."  name="form-AppointmentName" >
             <br>
             <br>
             <label for="Details">Details</label>

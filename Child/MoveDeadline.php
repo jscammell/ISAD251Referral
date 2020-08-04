@@ -75,16 +75,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     
     <h1 style="color: black;"> Move Deadline</h1>
 
-            <form method="post" action="ProcessAccountAdmin.php" id="CreateFamilyDeadline" >
+    <form method="post" action="../ServerSideCode/MoveDeadline.php" id="CreateFamilyDeadline" >
             <br>
             <label for="Appointment_Name">Appointment Name To Be Updated</label>
             <br>
-            <input type="text" id="form-AppointmentName" placeholder="Appointment Name..."  name="formAppointmentName" >
+            <input type="text" id="form-AppointmentName" placeholder="Appointment Name..."  name="form-AppointmentName" >
             <br>
             <br>
-            <label for="Date">Date</label>
+            <label for="Date">Date (YYYY-MM-DD 00:00:00)</label>
             <br>
-            <input type="text" id="form-Date" placeholder="Date..."  name="form-Date" >
+            <input type="text" id="form-Date" placeholder="YYYY-MM-DD 00:00:00"  name="form-Date" >
             <br>
             <br>
             
