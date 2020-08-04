@@ -1,0 +1,26 @@
+CREATE TABLE family(
+    familyId INT AUTO_INCREMENT NOT NULL,
+    name VARCHAR(255) NOT NULL,    
+    PRIMARY KEY (familyId)
+);
+
+CREATE TABLE appointment(
+    appointmentId INT AUTO_INCREMENT NOT NULL,
+    appointment_Name VARCHAR(255) NOT NULL,
+    notes VARCHAR(255) NOT NULL,
+    details VARCHAR(255) NOT NULL,
+    child_Name VARCHAR(255) NOT NULL,
+    date VARCHAR(255) NOT NULL,
+    PRIMARY KEY (appointmentId)   
+);
+
+
+CREATE TABLE completedAppointment(
+    appointmentId INT AUTO_INCREMENT NOT NULL,
+    appointment_Name VARCHAR(255) NOT NULL,
+    notes VARCHAR(255) NOT NULL,
+    details VARCHAR(255) NOT NULL,
+    child_Name VARCHAR(255) NOT NULL,
+    date VARCHAR(255) NOT NULL,
+    PRIMARY KEY (appointmentId)   
+);
