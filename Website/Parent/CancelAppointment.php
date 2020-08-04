@@ -83,9 +83,18 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
             <br>             
             <br>
 
-            <input type="submit" value="Submit" class="btn btn-info">
+            <input onclick="clicked()"type="submit" value="Submit" class="btn btn-info">  
             
+      
             </form>
+</div>
+  
+  <script>
+function clicked(e)
+{
+    if(!confirm('Are you sure?'))e.preventDefault();
+}
+</script>
       
 </div>
   

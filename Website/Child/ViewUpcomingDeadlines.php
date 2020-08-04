@@ -88,9 +88,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
             </form>
         
         <?php
-    echo "<tr>";
-            echo "<td>Appointment</td>";
-            echo "---";
+    echo "<tr>";            
             echo "<td>Appointment Name</td>";
             echo "----";
             echo "<td>Notes</td>";
@@ -125,9 +123,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                             $child_Name = $rowAppointment['child_Name'];
                             $date = $rowAppointment['date'];
                             
-                            echo "<tr>";
-                            echo "<td>".$appointmentId."</td>";
-                            echo "------------------";
+                            echo "<tr>";                            
                             echo "<td>".$appointment_Name."</td>";
                             echo "---";
                             echo "<td>".$notes."</td>";
